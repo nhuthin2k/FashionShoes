@@ -1,0 +1,69 @@
+﻿* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "roboto",sans-serif;
+}
+
+
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+
+.container {
+    background-color: none;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.backgr {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+    .backgr p {
+        font-family: "roboto";
+    }
+
+.bst {
+    border: solid 20px white;
+    padding: 0px;
+}
+
+.container-bst {
+    position: absolute;
+    top: 600px;
+    width: 72%;
+    z-index: 999;
+}
+
+.container-sp {
+    margin-top: 250px;
+}
+
+.container-bst .bst .ele-hiden {
+    background-color: #ffffff9e;
+}
+
+.container-bst .bst .ele-hiden {
+    opacity: 0;
+}
+
+.container-bst .bst .backgr .ele-hiden:hover {
+    opacity: 1;
+}
+#myCarousel{
+    width : 100%;
+}
+.ele-hiden {
+    width: 100%;
+    height: 200px;
+    line-height: 1;
+    display: inline-block;
+}
+.ele-hiden .ele-first{
+    margin-top: 45px;
+}

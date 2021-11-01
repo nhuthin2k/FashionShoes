@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" type="text/css" href="~/home.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/ckeditor")
+<style>
+    .container body-content{
+        width :90%;
+    }
+</style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="color: none">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("FashionShoes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li>@Html.ActionLink("Giày Nam", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Giày Nữ", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Hàng mới về", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Phụ kiện", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Đăng Nhập", "Login", "Accounts")</li>
+                    <li>@Html.ActionLink("Đăng xuất", "Logoff", "Accounts")</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+    
+        
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - địa chỉ : Mê Linh- Hà Nội</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
