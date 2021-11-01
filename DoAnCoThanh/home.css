@@ -1,0 +1,16 @@
+﻿*{
+    padding : 0 ;
+    margin: 0 auto;
+    font-family: "roboto",sans-serif;
+}
+
+
+h1 {
+    color: red;
+    font-size 30px;
+}
+.container{
+   background-color: none;
+   width : 90%;
+   margin-left: 5%;
+}
