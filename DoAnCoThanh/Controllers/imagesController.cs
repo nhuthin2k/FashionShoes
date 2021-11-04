@@ -10,108 +10,107 @@ using DoAnCoThanh.Models;
 
 namespace DoAnCoThanh.Controllers
 {
-    public class HangHoasController : Controller
+    public class imagesController : Controller
     {
         private DoAnContext db = new DoAnContext();
 
-        // GET: HangHoas
+        // GET: images
         public ActionResult Index()
         {
-            return View(db.HangHoas.ToList());
+            return View(db.images.ToList());
         }
 
-        // GET: HangHoas/Details/5
+        // GET: images/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HangHoa hangHoa = db.HangHoas.Find(id);
-            if (hangHoa == null)
+            image image = db.images.Find(id);
+            if (image == null)
             {
                 return HttpNotFound();
             }
-            return View(hangHoa);
+            return View(image);
         }
 
-        // GET: HangHoas/Create
-     
+        // GET: images/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HangHoas/Create
+        // POST: images/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSp,TenSp,NhaCungCap,Gia,ChatLieu,SoLuong")] HangHoa hangHoa)
+        public ActionResult Create([Bind(Include = "maSP,TenAnh")] image image)
         {
             if (ModelState.IsValid)
             {
-                db.HangHoas.Add(hangHoa);
+                db.images.Add(image);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(hangHoa);
+            return View(image);
         }
 
-        // GET: HangHoas/Edit/5
+        // GET: images/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HangHoa hangHoa = db.HangHoas.Find(id);
-            if (hangHoa == null)
+            image image = db.images.Find(id);
+            if (image == null)
             {
                 return HttpNotFound();
             }
-            return View(hangHoa);
+            return View(image);
         }
 
-        // POST: HangHoas/Edit/5
+        // POST: images/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaSp,TenSp,NhaCungCap,Gia,ChatLieu,SoLuong")] HangHoa hangHoa)
+        public ActionResult Edit([Bind(Include = "maSP,TenAnh")] image image)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(hangHoa).State = EntityState.Modified;
+                db.Entry(image).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(hangHoa);
+            return View(image);
         }
 
-        // GET: HangHoas/Delete/5
+        // GET: images/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HangHoa hangHoa = db.HangHoas.Find(id);
-            if (hangHoa == null)
+            image image = db.images.Find(id);
+            if (image == null)
             {
                 return HttpNotFound();
             }
-            return View(hangHoa);
+            return View(image);
         }
 
-        // POST: HangHoas/Delete/5
+        // POST: images/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            HangHoa hangHoa = db.HangHoas.Find(id);
-            db.HangHoas.Remove(hangHoa);
+            image image = db.images.Find(id);
+            db.images.Remove(image);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

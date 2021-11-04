@@ -34,12 +34,12 @@ namespace DoAnCoThanh.Controllers
             {
                 if (username.Equals("username") && pass.Equals("abc123"))
                 {
-                    FormsAuthentication.SetAuthCookie(username, false);
-                    return RedirectToAction("Index", "HangHoa");
+                    FormsAuthentication.SetAuthCookie(username, true);
+                    return RedirectToAction("Index", "HangHoas");
                 }
                 else
                 {
-                    ViewBag.invalidData = "Nhập username = username và pass = abc123 đi";
+                    ViewBag.invalidData = "sai thông tin đăng nhập";
                 }
             }
             ViewBag.username = username;
@@ -48,7 +48,7 @@ namespace DoAnCoThanh.Controllers
         public ActionResult Logoff()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "HangHoa");
+            return RedirectToAction("Index", "HangHoas");
         }
     }
 }

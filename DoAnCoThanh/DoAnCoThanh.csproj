@@ -131,6 +131,7 @@
     <Compile Include="Controllers\HangHoasController.cs" />
     <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\imagesController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
     <Compile Include="Controllers\NhaCungCapsController.cs" />
     <Compile Include="Controllers\NhanViensController.cs" />
@@ -138,9 +139,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202110310521568_create_database.cs" />
-    <Compile Include="Migrations\202110310521568_create_database.Designer.cs">
-      <DependentUpon>202110310521568_create_database.cs</DependentUpon>
+    <Compile Include="Migrations\202111041224235_create_database.cs" />
+    <Compile Include="Migrations\202111041224235_create_database.Designer.cs">
+      <DependentUpon>202111041224235_create_database.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\account.cs" />
@@ -149,6 +150,7 @@
     <Compile Include="Models\DoAnContext.cs" />
     <Compile Include="Models\HangHoa.cs" />
     <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\image.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
     <Compile Include="Models\NhanVien.cs" />
@@ -161,6 +163,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -244,10 +250,13 @@
     <Content Include="Views\TinTucs\Edit.cshtml" />
     <Content Include="Views\TinTucs\Index.cshtml" />
     <Content Include="Views\Accounts\login.cshtml" />
+    <Content Include="Views\images\Create.cshtml" />
+    <Content Include="Views\images\Delete.cshtml" />
+    <Content Include="Views\images\Details.cshtml" />
+    <Content Include="Views\images\Edit.cshtml" />
+    <Content Include="Views\images\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -262,8 +271,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110310521568_create_database.resx">
-      <DependentUpon>202110310521568_create_database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111041224235_create_database.resx">
+      <DependentUpon>202111041224235_create_database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

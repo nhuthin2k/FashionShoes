@@ -23,6 +23,10 @@ namespace DoAnCoThanh.Models
         public string ChatLieu { get; set; }
         [DisplayName("Số lượng")]
         public string SoLuong { get; set; }
-        
+        [DisplayName("Mô tả sản phẩm")]
+        public string MoTa { get; set; }
+
+        public ICollection<image> images { get; set; }
+
     }
 }

@@ -10,8 +10,9 @@ namespace DoAnCoThanh.Models
     [Table("tintuc")]
     public class TinTuc : BaseModel
     {
+      
         [DisplayName("Mã tin tức")]
-        public string MaTinTuc { get; set; }
+        public int MaTinTuc { get; set; }
         [DisplayName(" Tên tin tức")]
         public string TenTinTuc { get; set; }
         [DisplayName("Nội dung")]

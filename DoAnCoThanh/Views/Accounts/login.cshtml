@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<form action="@Url.Action("Login","Account")" method="post">
+<form action="@Url.Action("Login","Accounts")" method="post">
     <label>Username</label>
     <input type="text" name="username" value="@ViewBag.username" />
     <span style="color: red">@ViewBag.usernameError</span>
