@@ -1,4 +1,5 @@
 ﻿
+@Model DoAnCoThanh.Models.HangHoa
 @{
     ViewBag.Title = "Home Page";
 }
@@ -52,8 +53,8 @@
 <div class="row container-bst">
     <div class="col-md-4 bst">
         <div class="backgr" style="background-image: url('https://theme.hstatic.net/200000382351/1000760001/14/policy_banner_img1.jpg?v =136');">
-            <div class="ele-hiden" >
-               
+            <div class="ele-hiden">
+
                 <p class="ele-first" style="text-align :center ; font-size: 35px; color: #ff8036 ; ">bộ sưu tập</p>
                 <p style="text-align: center; font-size: 50px">giày snaker</p>
             </div>
@@ -106,338 +107,61 @@
 
     <nav>
         <div class="row container-sp1">
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
+            @foreach (var item in ViewBag.HangHoa)
+            {
+                <div class="col-md-3 sp">
+                    <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
 
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-classics-b1111">
-                                <img id="1034890770-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" alt="GB Classics B1111">
-                            </a>
+                        <div class="product-item text-center">
+                            <div class="product-img">
+                                <a href="/products/gb-classics-b1111">
+                                    <img id="1034890770-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" alt="GB Classics B1111">
+                                </a>
 
-                            <div class="product-tags">
+                                <div class="product-tags">
 
-                                <span class="tag-sale">
-                                    -20%
-                                </span>
-
-                            </div>
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-classics-b1111">GB Classics B1111</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">255,000₫</span>
-
-                                <span class="original-price"><s>320,000₫</s></span>
-
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-
-                        </div>
-                        <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                            <a href="javascript:void(0)" data-id="1076737201" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-warriors-b1127">
-                                <img id="1034890765-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom21.49577_07b609b012914351a6f243aebc1417b2_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom21.49577_07b609b012914351a6f243aebc1417b2_medium.jpg" alt="GB Warriors B1127">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -46%
-                                </span>
-
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-warriors-b1127">GB Warriors B1127</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">185,000₫</span>
-
-                                <span class="original-price"><s>343,280₫</s></span>
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                            <div class="list-variants-img">
-                               @* <div class="inner">
-                                    <ul class="no-bullets clearfix text-center">
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890765-tab1" href="/products/gb-warriors-b1127#1076737165" title="TRANGTIM / 40" data-img="//product.hstatic.net/200000382351/product/bom21.49592_281be750ca804f86aad16cdbd8600ef6_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom21.49592_281be750ca804f86aad16cdbd8600ef6_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom21.49592_281be750ca804f86aad16cdbd8600ef6_icon.jpg" alt="TRANGTIM / 40"></a>
-                                        </li>
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890765-tab1" href="/products/gb-warriors-b1127#1076737171" title="TRANGHONG / 40" data-img="//product.hstatic.net/200000382351/product/bom21.49577_07b609b012914351a6f243aebc1417b2_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom21.49577_07b609b012914351a6f243aebc1417b2_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom21.49577_07b609b012914351a6f243aebc1417b2_icon.jpg" alt="TRANGHONG / 40"></a>
-                                        </li>
-                                    </ul>
-                                </div>*@
-                            </div>
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737169" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-workout-b1053">
-                                <img id="1034890799-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom7.11056_5655dbb87eb048f5b84dd7b892119c0f_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom7.11056_5655dbb87eb048f5b84dd7b892119c0f_medium.jpg" alt="GB Workout B1053">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -53%
-                                </span>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-workout-b1053">GB Workout B1053</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">149,000₫</span>
-
-                                <span class="original-price"><s>316,448₫</s></span>
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                            @*<div class="list-variants-img">
-                                <div class="inner">
-                                    <ul class="no-bullets clearfix text-center">
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890799-tab1" href="/products/gb-workout-b1053#1076737496" title="TRANG / 40" data-img="//product.hstatic.net/200000382351/product/bom7.11056_5655dbb87eb048f5b84dd7b892119c0f_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom7.11056_5655dbb87eb048f5b84dd7b892119c0f_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom7.11056_5655dbb87eb048f5b84dd7b892119c0f_icon.jpg" alt="TRANG / 40"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>*@
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737496" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-warriors-b1094">
-                                <img id="1034890772-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/b1082.d2_765d23e77f2449dd986bac8aaa7c241b_medium.jpg" data-src="//product.hstatic.net/200000382351/product/b1082.d2_765d23e77f2449dd986bac8aaa7c241b_medium.jpg" alt="GB Warriors B1094">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -34%
-                                </span>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-warriors-b1094">GB Warriors B1094</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">255,000₫</span>
-
-                                <span class="original-price"><s>385,000₫</s></span>
-
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                           @* <div class="list-variants-img">
-                                <div class="inner">
-                                    <ul class="no-bullets clearfix text-center">
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890772-tab1" href="/products/gb-warriors-b1094#1076737231" title="KEM / 40" data-img="//product.hstatic.net/200000382351/product/b1082.k1_f55d8f21b10a4b929c15366985b4bcf6_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/b1082.k1_f55d8f21b10a4b929c15366985b4bcf6_icon.jpg" data-src="//product.hstatic.net/200000382351/product/b1082.k1_f55d8f21b10a4b929c15366985b4bcf6_icon.jpg" alt="KEM / 40"></a>
-                                        </li>
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890772-tab1" href="/products/gb-warriors-b1094#1076737237" title="DEN / 40" data-img="//product.hstatic.net/200000382351/product/b1082.d2_765d23e77f2449dd986bac8aaa7c241b_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/b1082.d2_765d23e77f2449dd986bac8aaa7c241b_icon.jpg" data-src="//product.hstatic.net/200000382351/product/b1082.d2_765d23e77f2449dd986bac8aaa7c241b_icon.jpg" alt="DEN / 40"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>*@
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737231" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-warriors-b1135">
-                                <img id="1034890762-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom4.52124_a2fdc6b88b674d05a32dc3b326e5d035_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom4.52124_a2fdc6b88b674d05a32dc3b326e5d035_medium.jpg" alt="GB Warriors B1135">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -47%
-                                </span>
-
-                            </div>
-
-
-                          
-
-
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-warriors-b1135">GB Warriors B1135</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">185,000₫</span>
-
-                                <span class="original-price"><s>351,805₫</s></span>
-
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                            <div class="list-variants-img">
-
-                            </div>
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-street-warriors-b1062">
-                                <img id="1034890794-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom27.121043_61723da67f1c45f9b3fab8e9a1699ddd_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom27.121043_61723da67f1c45f9b3fab8e9a1699ddd_medium.jpg" alt="GB Street Warriors B1062">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -42%
-                                </span>
-
-                            </div>
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-street-warriors-b1062">GB Street Warriors B1062</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">225,000₫</span>
-
-                                <span class="original-price"><s>385,000₫</s></span>
-
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                            <div class="list-variants-img">
-                                @*<div class="inner">
-                                    <ul class="no-bullets clearfix text-center">
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890794-tab1" href="/products/gb-street-warriors-b1062#1076737430" title="XAM / 40" data-img="//product.hstatic.net/200000382351/product/bom27.121054_fix_9f35a28e1ede4555b4c701f30cd63e28_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom27.121054_fix_9f35a28e1ede4555b4c701f30cd63e28_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom27.121054_fix_9f35a28e1ede4555b4c701f30cd63e28_icon.jpg" alt="XAM / 40"></a>
-                                        </li>
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890794-tab1" href="/products/gb-street-warriors-b1062#1076737436" title="TRANG / 40" data-img="//product.hstatic.net/200000382351/product/bom27.121072_00ee3b7430d14fec9303fbf5cf506157_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom27.121072_00ee3b7430d14fec9303fbf5cf506157_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom27.121072_00ee3b7430d14fec9303fbf5cf506157_icon.jpg" alt="TRANG / 40"></a>
-                                        </li>
-                                        <li>
-                                            <a class="variant-image-loop" data-feature-image="1034890794-tab1" href="/products/gb-street-warriors-b1062#1076737442" title="DEN / 40" data-img="//product.hstatic.net/200000382351/product/bom27.121043_61723da67f1c45f9b3fab8e9a1699ddd_medium.jpg"><img class="lazyload" src="//product.hstatic.net/200000382351/product/bom27.121043_61723da67f1c45f9b3fab8e9a1699ddd_icon.jpg" data-src="//product.hstatic.net/200000382351/product/bom27.121043_61723da67f1c45f9b3fab8e9a1699ddd_icon.jpg" alt="DEN / 40"></a>
-                                        </li>
-                                    </ul>
-                                </div>*@
-                            </div>
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737431" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 sp">
-                <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
-                    <div class="product-item text-center">
-                        <div class="product-img">
-                            <a href="/products/gb-warriors-b1056">
-                                <img id="1034890796-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/1056-k__1__c8a03e8c1cd3427da014f1ffc24de625_medium.jpg" data-src="//product.hstatic.net/200000382351/product/1056-k__1__c8a03e8c1cd3427da014f1ffc24de625_medium.jpg" alt="GB Warriors B1056">
-                            </a>
-
-                            <div class="product-tags">
-
-                                <span class="tag-sale">
-                                    -42%
-                                </span>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="product-info">
-                            <div class="product-title">
-                                <a href="/products/gb-warriors-b1056">GB Warriors B1056</a>
-                            </div>
-                            <div class="product-price">
-                                <span class="current-price">225,000₫</span>
-
-                                <span class="original-price"><s>385,000₫</s></span>
-
-                            </div>
-                        </div>
-                        <div class="fAbsolute">
-                            <div class="list-variants-img">
-                                <div class="inner">
-
+                                    <span class="tag-sale">
+                                        -20%
+                                    </span>
 
                                 </div>
                             </div>
+
+                            <div class="product-info">
+                                <div class="product-title">
+                                    <a href="/products/gb-classics-b1111">@item.TenSp</a>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">@item.Gia</span>
+
+                                    <span class="original-price"><s>320,000₫</s></span>
+
+                                </div>
+                            </div>
+                            <div class="fAbsolute">
+
+                            </div>
                             <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737454" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
+                                <a href="javascript:void(0)" data-id="1076737201" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
+
+
+
+
+
+
+
 
         </div>
-        
 
-     
 
-</nav>
+
+
+    </nav>
 
 
     <!--

@@ -10,7 +10,7 @@ using DoAnCoThanh.Models;
 
 namespace DoAnCoThanh.Controllers
 {
-    [Authorize]
+    
     public class ChiTietHoaDonsController : Controller
     {
         private DoAnContext db = new DoAnContext();

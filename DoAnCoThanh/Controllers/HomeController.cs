@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCoThanh.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,8 @@ namespace DoAnCoThanh.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.HangHoa = new HangHoa();
+          
             return View();
         }
 
