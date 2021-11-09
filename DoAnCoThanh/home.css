@@ -41,7 +41,7 @@ h1 {
 }
 
 .container-sp {
-    margin-top: 250px;
+    margin-top: 270px !important;
 }
 
 .container-bst .bst .ele-hiden {
@@ -67,4 +67,11 @@ h1 {
 .ele-hiden .ele-first{
     margin-top: 45px;
 }
+/*tab nav*/
+.tab-pane.fade.active {
+    opacity: 1 !important;
+}
+/*end tab nav*/
+
+
  

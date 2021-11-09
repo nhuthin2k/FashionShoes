@@ -37,9 +37,18 @@ namespace DoAnCoThanh.Migrations
                         TenSp = c.String(),
                         NhaCungCap = c.String(maxLength: 20),
                         Gia = c.Int(nullable: false),
+                        GiaCu = c.Int(nullable: false),
+                        KM = c.Single(nullable: false),
+                        LoaiGiay = c.String(),
+                        KieuDang = c.String(),
+                        KieuLot = c.String(),
+                        KieuDe = c.String(),
+                        DoCao = c.String(),
+                        CoGiay = c.String(),
                         ChatLieu = c.String(),
                         SoLuong = c.String(),
-                        MoTa = c.String(),
+                        Size = c.String(),
+                        HinhAnh = c.String(),
                     })
                 .PrimaryKey(t => t.MaSp);
             

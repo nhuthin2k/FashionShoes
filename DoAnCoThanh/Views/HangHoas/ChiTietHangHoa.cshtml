@@ -1,0 +1,63 @@
+﻿@model  DoAnCoThanh.Models.HangHoa
+@{
+    ViewBag.Title = "ChiTietHangHoa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <p> đang thi công</p>
+</head>
+<body>
+    <div class=" row ChiTiet">
+        <div class=" col-md-6 AnhSP">
+            <p>abc</p>
+        </div>
+        <div class="col-md-6 MoTa">
+            <div class="product-content-wrapper" style="top: 20px; left: 1149.48px; width: 380px;">
+                <div class="pro-content-head clearfix">
+                    <div class="grid mg-left-5">
+                        <div class="grid__item large--two-thirds medium--one-half small--two-thirds pd-left5">
+                            <h1 itemprop="name">@ViewBag.ChiTiet.TenSp</h1>
+                        </div>
+                        <div class="grid__item large--one-third medium--one-half small--one-third pd-left5">
+                            <div class="pro-stock">
+
+                                <span class="in-stock">Còn hàng</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-brand">
+                    <span class="title">Thương hiệu:</span> <a href="/collections/vendors?q=giaybom&amp;view=vendor-alt">@ViewBag.ChiTiet.NhaCungCap</a>
+                </div>
+                <span>|</span>
+                <div class="pro-type">
+                    <span class="title">Loại: <a href="/collections/types?q=giay-cao-got-vn&amp;view=type-alt">GIÀY CAO GÓT VN</a></span>
+                </div>
+
+                <span>|</span>
+                <div class="pro-sku ProductSku">
+                    <span class="title">Mã SP:</span> <span class="sku-number">GB00126_TRANG_39</span>
+                </div>
+
+
+
+                <div class="pro-price clearfix">
+                    <span class="current-price ProductPrice">190,000₫</span>
+
+                    <span class="original-price ComparePrice">
+                        <s>313,393₫</s>
+                        (-39%)
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<h2>ChiTietHangHoa</h2>
+

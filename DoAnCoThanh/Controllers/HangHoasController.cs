@@ -104,6 +104,12 @@ namespace DoAnCoThanh.Controllers
             }
             return View(hangHoa);
         }
+        public ActionResult ChiTietHangHoa() {
+            DoAnContext db = new DoAnContext();
+            ViewBag.ChiTiet = db.HangHoas.Where(HangHoa => HangHoa.MaSp ==MaSp );
+            var ChiTiet = db.HangHoas.ToList();
+            return View();
+        }
 
         // POST: HangHoas/Delete/5
         [HttpPost, ActionName("Delete")]

@@ -1,5 +1,5 @@
 ﻿
-@Model DoAnCoThanh.Models.HangHoa
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -93,35 +93,28 @@
             <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">THỂ THAO</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">GIÀY LƯỜI</a>
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">GIÀY CAO GÓT</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">BATA</a>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-    </div>
-
-    <nav>
-        <div class="row container-sp1">
-            @foreach (var item in ViewBag.HangHoa)
+        <div class="tab-pane fade active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            @foreach (var item in ViewBag.ListHangHoa)
             {
                 <div class="col-md-3 sp">
                     <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
 
                         <div class="product-item text-center">
                             <div class="product-img">
-                                <a href="/products/gb-classics-b1111">
-                                    <img id="1034890770-tab1" class="lazyload" src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" data-src="//product.hstatic.net/200000382351/product/bom9.4303101bom9.4_5360ff85248749f0abc14040bdda7053_medium.jpg" alt="GB Classics B1111">
+                                <a href="">
+                                    <img id="1034890770-tab1" class="lazyload" src="~/Resources/@item.HinhAnh" alt="ảnh giày " style="height : 240px">
                                 </a>
-
                                 <div class="product-tags">
 
                                     <span class="tag-sale">
-                                        -20%
+                                        @item.KM%
                                     </span>
 
                                 </div>
@@ -129,39 +122,80 @@
 
                             <div class="product-info">
                                 <div class="product-title">
-                                    <a href="/products/gb-classics-b1111">@item.TenSp</a>
+                                    <a href="">@item.TenSp</a>
                                 </div>
                                 <div class="product-price">
-                                    <span class="current-price">@item.Gia</span>
+                                    <span class="current-price">
+                                        @item.Gia,000₫<span>
 
-                                    <span class="original-price"><s>320,000₫</s></span>
-
-                                </div>
-                            </div>
-                            <div class="fAbsolute">
+                                        <span class="original-price"><s>@item.GiaCu,000₫</s></span>
 
                             </div>
-                            <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
-                                <a href="javascript:void(0)" data-id="1076737201" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
-                            </div>
+                        </div>
+                        <div class="fAbsolute">
+
+                        </div>
+                        <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
+                            <a href="javascript:void(0)" data-id="1076737201" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
-            }
-
-
-
-
-
-
-
-
+            </div>
+        }
         </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                @foreach (var item in ViewBag.ListHangHoa1)
+                {
+                    <div class="col-md-3 sp">
+                        <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
+
+                            <div class="product-item text-center">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1034890770-tab1" class="lazyload" src="~/Resources/@item.HinhAnh" alt="ảnh giày " style="height : 240px">
+                                    </a>
+                                    <div class="product-tags">
+
+                                        <span class="tag-sale">
+                                            @item.KM%
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">@item.TenSp</a>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="current-price">
+                                            @item.Gia,000₫<span>
+
+                                                <span class="original-price"><s>@item.GiaCu,000₫</s></span>
+
+                                    </div>
+                                </div>
+                                <div class="fAbsolute">
+
+                                </div>
+                                <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
+                                    <a href="javascript:void(0)" data-id="1076737201" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+        </div>
+       
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+    </div>
 
 
-
-
+    <nav>
+ 
     </nav>
+    </div>
 
 
     <!--

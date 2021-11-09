@@ -99,5 +99,175 @@ namespace DoAnCoThanh.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_CLASSIC_B1558 {
+            get {
+                object obj = ResourceManager.GetObject("GB_CLASSIC_B1558", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_CLASSICS_B1111 {
+            get {
+                object obj = ResourceManager.GetObject("GB_CLASSICS_B1111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1055 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1055", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1094 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1094", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1127 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1127", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1134 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1134", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1135 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1135", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1502 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1554 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1554", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B886 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B886", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B888 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B888", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B920 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B926 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B926", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B936 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B936", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WORKOUT_B1295 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WORKOUT_B1295", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_WORKOUT_B786 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WORKOUT_B786", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126 {
+            get {
+                object obj = ResourceManager.GetObject("GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -9,10 +9,17 @@ namespace DoAnCoThanh.Controllers
 {
     public class HomeController : Controller
     {
+        /*
+        trang chủ trang ng dùng
+        
+         */
+        DoAnContext db = new DoAnContext();
         public ActionResult Index()
         {
-            ViewBag.HangHoa = new HangHoa();
-          
+            
+            ViewBag.ListHangHoa = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày thể thao\r\n").ToList<HangHoa>();
+            ViewBag.ListHangHoa1 = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày cao gót").ToList<HangHoa>();
+            var ListHangHoa = db.HangHoas.ToList();
             return View();
         }
 

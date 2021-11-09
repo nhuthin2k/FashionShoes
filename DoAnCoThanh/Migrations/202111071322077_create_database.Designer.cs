@@ -13,7 +13,7 @@ namespace DoAnCoThanh.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202111041224235_create_database"; }
+            get { return "202111071322077_create_database"; }
         }
         
         string IMigrationMetadata.Source

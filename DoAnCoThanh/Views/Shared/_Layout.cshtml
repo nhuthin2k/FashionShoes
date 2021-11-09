@@ -15,6 +15,7 @@
 </style>
 </head>
 <body>
+     @*header*@
     <div class="navbar navbar-inverse navbar-fixed-top" style="color: none">
         <div class="container">
             <div class="navbar-header">
@@ -39,16 +40,15 @@
             </div>
         </div>
     </div>
+    @*content*@
     <div class="container body-content">
-    
-        
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - địa chỉ : Mê Linh- Hà Nội</p>
-        </footer>
     </div>
-
+    @*footer*@
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - địa chỉ : Mê Linh- Hà Nội</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

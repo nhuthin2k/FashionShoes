@@ -19,14 +19,29 @@ namespace DoAnCoThanh.Models
         public string NhaCungCap { get; set; }
         [DisplayName("Giá ")]
         public int Gia { get; set; }
+        [DisplayName("giá cũ")]
+        public int GiaCu { get; set; }
+        public float KM { get; set; }
+
+        public string LoaiGiay { get; set; }
+        public string KieuDang { get; set; }
+        public string KieuLot { get; set; }
+        public string KieuDe { get; set; }
+        public string DoCao  { get; set; }
+        public string CoGiay { get; set; }
         [DisplayName("Chất liệu")]
         public string ChatLieu { get; set; }
         [DisplayName("Số lượng")]
         public string SoLuong { get; set; }
-        [DisplayName("Mô tả sản phẩm")]
-        public string MoTa { get; set; }
+        public string Size { get; set; }
+        public string HinhAnh { get; set; }
 
         public ICollection<image> images { get; set; }
-
+       /* public void  KhuyenMai(){
+            if (GiaCu>Gia)
+            {
+                KM = ((GiaCu - Gia) / GiaCu) * 100;
+            }
+        }*/
     }
 }

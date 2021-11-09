@@ -139,9 +139,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111041224235_create_database.cs" />
-    <Compile Include="Migrations\202111041224235_create_database.Designer.cs">
-      <DependentUpon>202111041224235_create_database.cs</DependentUpon>
+    <Compile Include="Migrations\202111071322077_create_database.cs" />
+    <Compile Include="Migrations\202111071322077_create_database.Designer.cs">
+      <DependentUpon>202111071322077_create_database.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\account.cs" />
@@ -176,17 +176,27 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="home.css" />
-    <None Include="Resources\anh1.jpg" />
-    <None Include="Resources\anhgiay3.png" />
-    <None Include="Resources\anhgiay2.jpg" />
     <None Include="Resources\Banner_UltraUncaged.jpg" />
     <None Include="Resources\banner1.jpg" />
     <None Include="Resources\banner2.jpg" />
     <None Include="Resources\banner5.jpg" />
-    <Content Include="Resources\giay4.png" />
-    <Content Include="Resources\giay5.png" />
-    <Content Include="Resources\giay5_1.png" />
-    <Content Include="Resources\giay6.png" />
+    <None Include="Resources\GB CLASSIC B1558.jpg" />
+    <None Include="Resources\GB CLASSICS B1111.jpg" />
+    <None Include="Resources\GB WARRIORS B886.jpg" />
+    <None Include="Resources\GB WARRIORS B888.png" />
+    <None Include="Resources\GB WARRIORS B920.jpg" />
+    <None Include="Resources\GB WARRIORS B926.jpg" />
+    <None Include="Resources\GB WARRIORS B936.jpg" />
+    <None Include="Resources\GB WARRIORS B1055.jpg" />
+    <None Include="Resources\GB WARRIORS B1094.jpg" />
+    <None Include="Resources\GB WARRIORS B1127.jpg" />
+    <None Include="Resources\GB WARRIORS B1134.jpg" />
+    <None Include="Resources\GB WARRIORS B1135.jpg" />
+    <None Include="Resources\GB WARRIORS B1502.jpg" />
+    <None Include="Resources\GB WARRIORS B1554.jpg" />
+    <None Include="Resources\GB WORKOUT B786.jpg" />
+    <None Include="Resources\GB WORKOUT B1295.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT MŨI NHỌN GB00126.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -255,6 +265,7 @@
     <Content Include="Views\images\Details.cshtml" />
     <Content Include="Views\images\Edit.cshtml" />
     <Content Include="Views\images\Index.cshtml" />
+    <Content Include="Views\HangHoas\ChiTietHangHoa.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -271,8 +282,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111041224235_create_database.resx">
-      <DependentUpon>202111041224235_create_database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111071322077_create_database.resx">
+      <DependentUpon>202111071322077_create_database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
