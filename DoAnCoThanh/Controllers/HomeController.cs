@@ -19,6 +19,7 @@ namespace DoAnCoThanh.Controllers
             
             ViewBag.ListHangHoa = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày thể thao\r\n").ToList<HangHoa>();
             ViewBag.ListHangHoa1 = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày cao gót").ToList<HangHoa>();
+            ViewBag.ListHangHoa2 = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày BATA").ToList<HangHoa>();
             var ListHangHoa = db.HangHoas.ToList();
             return View();
         }

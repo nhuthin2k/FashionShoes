@@ -104,12 +104,27 @@ namespace DoAnCoThanh.Controllers
             }
             return View(hangHoa);
         }
-        public ActionResult ChiTietHangHoa() {
+       
+        public ActionResult ChiTietHangHoa(int id) {
             DoAnContext db = new DoAnContext();
-            ViewBag.ChiTiet = db.HangHoas.Where(HangHoa => HangHoa.MaSp ==MaSp );
-            var ChiTiet = db.HangHoas.ToList();
+            ViewBag.ChiTiet = db.HangHoas.FirstOrDefault(HangHoa => HangHoa.MaSp  == id );
+           
             return View();
         }
+        public ActionResult BTS()
+        {
+            DoAnContext db = new DoAnContext();
+            ViewBag.MaryJane = db.HangHoas.Where(HangHoa => HangHoa.LoaiGiay == "GIÀY MARY JANE").ToList<HangHoa>();
+
+            return View();
+        }
+        public ActionResult GiayBATA()
+        { 
+            DoAnContext db = new DoAnContext();
+        ViewBag.GiayBT = db.HangHoas.Where(HangHoa => HangHoa.LoaiGiay == "giày BATA").ToList<HangHoa>();
+            
+            return View();
+    }
 
         // POST: HangHoas/Delete/5
         [HttpPost, ActionName("Delete")]

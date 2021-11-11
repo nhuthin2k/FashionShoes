@@ -5,12 +5,12 @@
 }
 
 <head>
-    <p> đang thi công</p>
+    <p style="tex"> Trang chủ > @ViewBag.ChiTiet.LoaiGiay </p>
 </head>
 <body>
     <div class=" row ChiTiet">
         <div class=" col-md-6 AnhSP">
-            <p>abc</p>
+            <img src="~/Resources/@ViewBag.ChiTiet.HinhAnh" alt="Alternate Text" />
         </div>
         <div class="col-md-6 MoTa">
             <div class="product-content-wrapper" style="top: 20px; left: 1149.48px; width: 380px;">
@@ -29,35 +29,47 @@
                     </div>
                 </div>
                 <div class="pro-brand">
-                    <span class="title">Thương hiệu:</span> <a href="/collections/vendors?q=giaybom&amp;view=vendor-alt">@ViewBag.ChiTiet.NhaCungCap</a>
-                </div>
-                <span>|</span>
-                <div class="pro-type">
-                    <span class="title">Loại: <a href="/collections/types?q=giay-cao-got-vn&amp;view=type-alt">GIÀY CAO GÓT VN</a></span>
+                    <span class="title">Thương hiệu:</span> <a href="">@ViewBag.ChiTiet.NhaCungCap</a>
                 </div>
 
-                <span>|</span>
+                <div class="pro-type">
+                    <span class="title">Loại: <a href="">@ViewBag.ChiTiet.LoaiGiay</a></span>
+                </div>
+
+
                 <div class="pro-sku ProductSku">
-                    <span class="title">Mã SP:</span> <span class="sku-number">GB00126_TRANG_39</span>
+                    <span class="title">Mã SP:</span> <span class="sku-number">@ViewBag.ChiTiet.MaSp</span>
                 </div>
 
 
 
                 <div class="pro-price clearfix">
-                    <span class="current-price ProductPrice">190,000₫</span>
+                    <span class="current-price ProductPrice">@ViewBag.ChiTiet.Gia,000₫</span>
 
                     <span class="original-price ComparePrice">
-                        <s>313,393₫</s>
-                        (-39%)
+                        <s>@ViewBag.ChiTiet.GiaCu,000₫  </s>
+                        ( @ViewBag.ChiTiet.KM %)
                     </span>
 
                 </div>
-
+                <p>GỌI ĐỂ MUA HÀNG NHANH HƠN </p>
+                <p> sdt (8h-22h)</p>
+                <p> TẶNG 1 ĐÔI VỚ CHO ĐƠN >150K </p>
+                <p>  NHẬP MÃ: TANGVOFashionShoes (HDSD: CHỌN THÊM VỚ TRONG ĐƠN HÀNG RỒI NHẬP MÃ TẠI BƯỚC THANH TOÁN)</p>
+                <p> Ship hàng toàn quốc</p>
+                <p> (từ 3-5 ngày</p>
+                <p> Đổi trả trong 30 ngày</p>
+                <p> (Hỗ trợ đổi trả ngay tại nhà)</p>
+                <p> Bảo hành 365 ngày</p>
             </div>
 
         </div>
+       
+      
     </div>
 </body>
 
-<h2>ChiTietHangHoa</h2>
+<footer>
+
+</footer>
 

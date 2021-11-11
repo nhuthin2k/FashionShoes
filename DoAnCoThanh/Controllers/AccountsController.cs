@@ -35,7 +35,7 @@ namespace DoAnCoThanh.Controllers
                 if (username.Equals("username") && pass.Equals("abc123"))
                 {
                     FormsAuthentication.SetAuthCookie(username, true);
-                    return RedirectToAction("Index", "HangHoas");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -48,7 +48,7 @@ namespace DoAnCoThanh.Controllers
         public ActionResult Logoff()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "HangHoas");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

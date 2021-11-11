@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "GiayTheThao";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <p style=" text-align : center ; color : burlywood;"> Bộ Sưu Tập Giày BATA</p>
+</head>
+
+<body>
+    @foreach (var item in ViewBag.GiayBT)
+    {
+        <div class="col-md-3 sp">
+            <div class="grid__item large--one-fifth medium--one-quarter small--one-half md-pd-left15">
+
+                <div class="product-item text-center">
+                    <div class="product-img">
+                        <a href="~/HangHoas/ChiTietHangHoa?id=@item.MaSp">
+                            <img id="1034890770-tab1" class="lazyload" src="~/Resources/@item.HinhAnh" alt="ảnh giày " style="height : 240px">
+                        </a>
+                        <div class="product-tags">
+
+                            <span class="tag-sale">
+                                @item.KM%
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <a href="">@item.TenSp</a>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">
+                                @item.Gia,000₫<span>
+
+                                    <span class="original-price"><s>@item.GiaCu,000₫</s></span>
+
+                        </div>
+                    </div>
+                    <div class="fAbsolute">
+
+                    </div>
+                    <div class="actionLoop medium--hide small--hide" style="background: rgb(102, 102, 102);">
+                        <a href="~/HangHoas/ChiTietHangHoa?id=@item.MaSp" class="scBuyNow styleBtnBuy">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</body>
+

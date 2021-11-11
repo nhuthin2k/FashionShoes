@@ -173,6 +173,16 @@ namespace DoAnCoThanh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GB_WARRIORS_B1173 {
+            get {
+                object obj = ResourceManager.GetObject("GB_WARRIORS_B1173", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GB_WARRIORS_B1502 {
             get {
                 object obj = ResourceManager.GetObject("GB_WARRIORS_B1502", resourceCulture);
@@ -263,9 +273,29 @@ namespace DoAnCoThanh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIÀY_BÍT_MŨI_B1288 {
+            get {
+                object obj = ResourceManager.GetObject("GIÀY_BÍT_MŨI_B1288", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126 {
             get {
                 object obj = ResourceManager.GetObject("GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIÀY_MARY_JANE_B1182 {
+            get {
+                object obj = ResourceManager.GetObject("GIÀY_MARY_JANE_B1182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

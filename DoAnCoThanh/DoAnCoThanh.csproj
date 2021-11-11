@@ -180,7 +180,6 @@
     <None Include="Resources\banner1.jpg" />
     <None Include="Resources\banner2.jpg" />
     <None Include="Resources\banner5.jpg" />
-    <None Include="Resources\GB CLASSIC B1558.jpg" />
     <None Include="Resources\GB CLASSICS B1111.jpg" />
     <None Include="Resources\GB WARRIORS B886.jpg" />
     <None Include="Resources\GB WARRIORS B888.png" />
@@ -197,6 +196,21 @@
     <None Include="Resources\GB WORKOUT B786.jpg" />
     <None Include="Resources\GB WORKOUT B1295.jpg" />
     <None Include="Resources\GIÀY CAO GÓT MŨI NHỌN GB00126.jpg" />
+    <None Include="Resources\GB CLASSIC B1474.jpg" />
+    <None Include="Resources\GB CLASSIC B1495.jpg" />
+    <None Include="Resources\GB CLASSIC B1558.jpg" />
+    <None Include="Resources\GB CLASSIC MULE B1494.jpg" />
+    <None Include="Resources\GB CLASSICS B1153.jpg" />
+    <None Include="Resources\GB CLASSICS B1169.jpg" />
+    <None Include="Resources\GB CLASSICS B1207.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT DÂY MẢNH GB00004.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT GB00129.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT MŨI NHỌN GB00106.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT MŨI NHỌN GB00107.jpg" />
+    <None Include="Resources\GIÀY CAO GÓT QUAI NGANG GB00128.jpg" />
+    <None Include="Resources\GB WARRIORS B1173.jpg" />
+    <None Include="Resources\GIÀY BÍT MŨI B1288.jpg" />
+    <None Include="Resources\GIÀY MARY JANE B1182.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -266,6 +280,8 @@
     <Content Include="Views\images\Edit.cshtml" />
     <Content Include="Views\images\Index.cshtml" />
     <Content Include="Views\HangHoas\ChiTietHangHoa.cshtml" />
+    <Content Include="Views\HangHoas\BTS.cshtml" />
+    <Content Include="Views\HangHoas\GiayBATA.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
