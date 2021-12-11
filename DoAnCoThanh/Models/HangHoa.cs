@@ -37,11 +37,16 @@ namespace DoAnCoThanh.Models
         public string HinhAnh { get; set; }
 
         public ICollection<image> images { get; set; }
-       /* public void  KhuyenMai(){
-            if (GiaCu>Gia)
-            {
-                KM = ((GiaCu - Gia) / GiaCu) * 100;
-            }
-        }*/
+
+        internal object ViewDetails(int maSp)
+        {
+            throw new NotImplementedException();
+        }
+        /* public void  KhuyenMai(){
+    if (GiaCu>Gia)
+    {
+        KM = ((GiaCu - Gia) / GiaCu) * 100;
+    }
+}*/
     }
 }

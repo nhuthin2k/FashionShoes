@@ -3,74 +3,79 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    <link rel="Index" href="~/home.css">
 }
-
-<h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.MaTinTuc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TenTinTuc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NoiDung)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayDang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreationTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreationUser)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ModifierTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ModifierUser)
-        </th>
-        <th></th>
-    </tr>
+<head>
+    <a href="/home/Index">trang chủ</a>
+    <a href="TinTucs/Index"> > Tin Tức</a>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.MaTinTuc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenTinTuc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NoiDung)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayDang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreationTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreationUser)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ModifierTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ModifierUser)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+</head>
+<body style=" margin-top: 70px">
 
-</table>
+   
+    <div class="wrapper">
+        <div class="row container-danhmucTT">
+            <div class="col-lg-6 tintucTT" style="width:70%">
+                <div class="row caption">
+                    <div class="col-lg-6 1/4" style="width:30%">
+                        @foreach (var item in ViewBag.TinTucss)
+                        {
+                            <div>
+                                <a href="/TinTucs/ChiTiet?id=@item.Id">
+                                    <img src="~/Resources/@item.HinhAnh" alt="Alternate Text" style=" width :200px;height: 200px;margin-top:50px" />
+                                </a>
+                            </div>
+
+                        }
+
+                    </div>
+                    <div class=" col-lg-6 1/4" style="width: 70%; margin-top: 60px">
+                        @foreach (var item in ViewBag.TinTucss)
+                        {
+                            <div style=" height: 250px; ">
+                                <a href="/TinTucs/ChiTiet?id=@item.Id">@item.TenTinTuc</a>
+                                <div class="">
+                                    <div style="display: flex;">
+                                        <div class="article-date" style="font-size:14px">
+                                            <i class="bi-calendar"></i>
+                                            @*<span>@tt.NgayDang</span>*@
+                                            <time>@item.NgayDang</time>
+                                        </div>
+                                        <div class="article-author" style="font-size: 14px ">
+                                            <i class="bi-person-circle"></i>
+                                            <span>@item.NguoiDang</span>
+                                        </div>
+                                        <div class="article-comment" style="font-size: 14px">
+                                            <i class="bi-chat"></i>
+                                            <span> 0</span>
+                                        </div>
+                                    </div>
+                                    <p style=" font-size: 14px;  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4;  -webkit-box-orient: vertical; text-align: justify "> @item.NoiDung</p>
+
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 list" style="width:30%">
+                <p>abc</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+

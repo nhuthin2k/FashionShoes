@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DoAnCoThanh.Models;
+//using CKEditor.Models;
 
 namespace DoAnCoThanh.Controllers
 {
@@ -17,11 +18,19 @@ namespace DoAnCoThanh.Controllers
         // GET: TinTucs
         public ActionResult Index()
         {
-            return View(db.TinTucs.ToList());
+            ViewBag.TinTucss = db.TinTucs.ToList();
+            return View();
+        }
+        public ActionResult ChiTiet(int? id)
+        {
+            
+            ViewBag.TinTucs = db.TinTucs.FirstOrDefault(TinTuc => TinTuc.Id == id);
+            
+            return View();
         }
 
         // GET: TinTucs/Details/5
-        [Authorize]
+       
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,7 +46,7 @@ namespace DoAnCoThanh.Controllers
         }
 
         // GET: TinTucs/Create
-        [Authorize]
+        
         public ActionResult Create()
         {
             return View();
@@ -61,7 +70,7 @@ namespace DoAnCoThanh.Controllers
         }
 
         // GET: TinTucs/Edit/5
-        [Authorize]
+        
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -93,7 +102,7 @@ namespace DoAnCoThanh.Controllers
         }
 
         // GET: TinTucs/Delete/5
-        [Authorize]
+       
         public ActionResult Delete(int? id)
         {
             if (id == null)

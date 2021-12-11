@@ -103,6 +103,16 @@ namespace DoAnCoThanh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bctt {
+            get {
+                object obj = ResourceManager.GetObject("bctt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GB_CLASSIC_B1558 {
             get {
                 object obj = ResourceManager.GetObject("GB_CLASSIC_B1558", resourceCulture);
@@ -116,6 +126,16 @@ namespace DoAnCoThanh.Properties {
         internal static System.Drawing.Bitmap GB_CLASSICS_B1111 {
             get {
                 object obj = ResourceManager.GetObject("GB_CLASSICS_B1111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_MARY_JANE_B1373 {
+            get {
+                object obj = ResourceManager.GetObject("GB_MARY_JANE_B1373", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +303,16 @@ namespace DoAnCoThanh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIÀY_BÍT_MŨI_TRÒN_B1280 {
+            get {
+                object obj = ResourceManager.GetObject("GIÀY_BÍT_MŨI_TRÒN_B1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126 {
             get {
                 object obj = ResourceManager.GetObject("GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126", resourceCulture);
@@ -297,6 +327,66 @@ namespace DoAnCoThanh.Properties {
             get {
                 object obj = ResourceManager.GetObject("GIÀY_MARY_JANE_B1182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIÀY_MARY_JANE_B1183 {
+            get {
+                object obj = ResourceManager.GetObject("GIÀY_MARY_JANE_B1183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mix_do_mua_dong {
+            get {
+                object obj = ResourceManager.GetObject("mix_do_mua_dong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap momo {
+            get {
+                object obj = ResourceManager.GetObject("momo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tintuc2 {
+            get {
+                object obj = ResourceManager.GetObject("tintuc2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tintuc3 {
+            get {
+                object obj = ResourceManager.GetObject("tintuc3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] VideoDeMo {
+            get {
+                object obj = ResourceManager.GetObject("VideoDeMo", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

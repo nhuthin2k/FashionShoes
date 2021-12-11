@@ -21,7 +21,10 @@ namespace DoAnCoThanh.Models
         public DbSet<NhanVien> NhanViens { get; set; }
         public DbSet<TinTuc> TinTucs { get; set; }
         public DbSet<Account> accounts { get; set; }
+        public DbSet<GioHang> GioHangs { get; set; }
 
         public System.Data.Entity.DbSet<DoAnCoThanh.Models.image> images { get; set; }
+
+        
     }
 }

@@ -17,7 +17,10 @@ namespace DoAnCoThanh.Controllers
         // GET: HangHoas
         public ActionResult Index()
         {
-            return View(db.HangHoas.ToList());
+            DoAnContext db = new DoAnContext();
+            ViewBag.AllSP = db.HangHoas.ToList<HangHoa>();
+            var All = db.HangHoas.ToList();
+            return View();
         }
 
         // GET: HangHoas/Details/5

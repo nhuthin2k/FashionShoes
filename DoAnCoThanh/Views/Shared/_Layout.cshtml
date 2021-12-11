@@ -3,38 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - FashionShoes</title>
     <link rel="stylesheet" type="text/css" href="~/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/ckeditor")
-<style>
-    .container body-content{
-        width :90%;
-    }
-</style>
+    <style>
+        .container body-content {
+            width: 90%;
+        }
+    </style>
 </head>
 <body>
     @*header*@
     <div class="navbar navbar-inverse navbar-fixed-top" style="color: none">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header"  >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("FashionShoes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+             
+                    
+                     @Html.ActionLink("FashionShoes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" } )
+                
+               
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
 
                     <li>@Html.ActionLink("Giày MARY JANE", "BTS", "HangHoas")</li>
-                    <li>@Html.ActionLink("Giày BATA", "GiayBATA", "HangHoas")</li>
-                    <li>@Html.ActionLink("Hàng mới về", "Index", "HangHoas")</li>
-                    <li>@Html.ActionLink("Phụ kiện", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Giày BATA", "GiayBATA", "HangHoas")</li>             
+                    <li>@Html.ActionLink("Kho Sản Phẩm", "Index", "HangHoas")</li>
+                    <li>@Html.ActionLink("Tin Tức", "Index", "TinTucs")</li>
                     <li>@Html.ActionLink("Đăng Nhập", "Login", "Accounts")</li>
                     <li>@Html.ActionLink("Đăng xuất", "Logoff", "Accounts")</li>
+
 
                 </ul>
             </div>
@@ -47,8 +53,39 @@
    
     @*footer*@
     <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - địa chỉ : Mê Linh- Hà Nội</p>
+    <footer style=" width: 75% ; height: 240px">
+        <div class="row container-footer">
+            <div class="col-lg-4">
+                <h1> FashionShoes-đại lý giày nữ</h1>
+                <p>SDT: ib chủ web :)))</p>
+                <p> Email: nhuthin123k50@gmail.com</p>
+                <p>facebook:.....</p>
+                <p>instagram</p>
+
+            </div> 
+            <div class="col-lg-4" >
+                <h2 style="font-size:36px">LIÊN KẾT NHANH</h2>
+                <a href="#">hướng dẫn mua hàng</a><br />
+                <a href="#">chính sách khách hàng thân thiết</a><br />
+                <img src="~/Resources/momo.jpg" alt="momo" style=" width: 100px; height:100px" />
+                <img src="~/Resources/bctt.gif" alt="bộ công thương" style=" width: 250px; height:100px"  />
+
+            </div>
+            <div class="col-lg-4">
+                <h3> ĐĂNG KÍ MUA GIÀY</h3>
+                <form action="/action_page.php">
+                    <label for="fname">email :</label><br>
+                    <input type="text" /><br>
+                    <label for="lname">nội dung:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <input type="submit" value="gửi">
+                    <p>Mỗi tháng FashionShoes đều có những đợt giảm giá dịch vụ và sản phẩm nhằm tri ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
+                </form>
+            </div>
+       
+        </div>
+       
+
     </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

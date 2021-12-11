@@ -18,6 +18,11 @@ namespace DoAnCoThanh
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "them vao gio",
+                url: "them-vao-gio",
+                defaults: new { controller = "GioHangs", action = "AddItem", id = UrlParameter.Optional }
+            );
         }
     }
 }

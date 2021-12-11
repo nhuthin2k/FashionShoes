@@ -4,11 +4,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<head>
-    <p style="tex"> Trang chủ > @ViewBag.ChiTiet.LoaiGiay </p>
+<head >
+    <a href="/Home/Index" style=" font-size:20px">Trang chủ</a>
+    <a href="/TinTucs/Index"style=" font-size:20px"> > Tin Tức</a>
 </head>
-<body>
-    <div class=" row ChiTiet">
+<body  style="margin-top: 50px;">
+    <div class=" row ChiTiet" style="margin-top:35px;">
         <div class=" col-md-6 AnhSP">
             <img src="~/Resources/@ViewBag.ChiTiet.HinhAnh" alt="Alternate Text" />
         </div>
@@ -22,7 +23,7 @@
                         <div class="grid__item large--one-third medium--one-half small--one-third pd-left5">
                             <div class="pro-stock">
 
-                                <span class="in-stock">Còn hàng</span>
+                                <span class="in-stock" style="margin-left: 305px; border: groove; border-color: aqua; color: crimson">Còn hàng</span>
 
                             </div>
                         </div>
@@ -55,17 +56,27 @@
                 <p>GỌI ĐỂ MUA HÀNG NHANH HƠN </p>
                 <p> sdt (8h-22h)</p>
                 <p> TẶNG 1 ĐÔI VỚ CHO ĐƠN >150K </p>
-                <p>  NHẬP MÃ: TANGVOFashionShoes (HDSD: CHỌN THÊM VỚ TRONG ĐƠN HÀNG RỒI NHẬP MÃ TẠI BƯỚC THANH TOÁN)</p>
-                <p> Ship hàng toàn quốc</p>
-                <p> (từ 3-5 ngày</p>
-                <p> Đổi trả trong 30 ngày</p>
-                <p> (Hỗ trợ đổi trả ngay tại nhà)</p>
-                <p> Bảo hành 365 ngày</p>
+                <p> <i class="bi-ticket perferated"></i> NHẬP MÃ: TANGVOFashionShoes (HDSD: CHỌN THÊM VỚ TRONG ĐƠN HÀNG RỒI NHẬP MÃ TẠI BƯỚC THANH TOÁN)</p>
+                <p><i class="bi-truck"></i> Ship hàng toàn quốc (từ 3-5 ngày)</p>
+
+                <p><i class="bi-alarm"></i> Đổi trả trong 30 ngày (Hỗ trợ đổi trả ngay tại nhà)</p>
+
+                <p><i class="bi-alarm"></i> Bảo hành 365 ngày</p>
             </div>
 
         </div>
-       
-      
+
+    </div>
+    <div>
+        <h1 style="color: coral; border: double; border-color: coral; width: 300px">Mô Tả Sản Phẩm</h1>
+        <p> Giày : @ViewBag.ChiTiet.TenSp</p> 
+        <p> kiểu dáng : @ViewBag.ChiTiet.KieuDang</p>
+        <p>kiểu lót : @ViewBag.ChiTiet.KieuLot</p>
+        <p>Kiểu đế : @ViewBag.ChiTiet.KieuDe</p>
+        <p>Độ cao : @ViewBag.ChiTiet.DoCao</p>
+        <p> Cổ giày : @ViewBag.ChiTiet.CoGiay</p>
+        <p> Chất Liệu : @ViewBag.ChiTiet.ChatLieu</p>
+        <p> Kích Cỡ : @ViewBag.ChiTiet.Size</p>
     </div>
 </body>
 

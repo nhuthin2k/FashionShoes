@@ -19,7 +19,7 @@ namespace DoAnCoThanh.Models
         [DisplayName("Địa chỉ")]
         public string DiaChi { get; set; }
         [DisplayName("Số điện thoại")]
-        public int SoDT { get; set; }
+        public int SDT { get; set; }
         [DisplayName("Ngày giao dịch")]
         public DateTime NgayGiaoDich { get; set; }
         [DisplayName("Phương thức thanh toán")]

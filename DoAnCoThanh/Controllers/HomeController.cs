@@ -16,7 +16,7 @@ namespace DoAnCoThanh.Controllers
         DoAnContext db = new DoAnContext();
         public ActionResult Index()
         {
-            
+            ViewBag.TinTucs = db.TinTucs.Take(3).ToList<TinTuc>();//lấy ra 3 tin tức và trả về view home 
             ViewBag.ListHangHoa = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày thể thao\r\n").ToList<HangHoa>();
             ViewBag.ListHangHoa1 = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày cao gót").ToList<HangHoa>();
             ViewBag.ListHangHoa2 = db.HangHoas.Where(HangHoa=>HangHoa.LoaiGiay == "giày BATA").ToList<HangHoa>();

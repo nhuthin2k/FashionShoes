@@ -130,11 +130,17 @@
   <data name="Banner_UltraUncaged" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Banner_UltraUncaged.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bctt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bctt.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GB_CLASSICS_B1111" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GB CLASSICS B1111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GB_CLASSIC_B1558" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GB CLASSIC B1558.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GB_MARY_JANE_B1373" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GB MARY JANE B1373.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GB_WARRIORS_B1055" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GB WARRIORS B1055.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,10 +190,31 @@
   <data name="GIÀY_BÍT_MŨI_B1288" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIÀY BÍT MŨI B1288.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GIÀY_BÍT_MŨI_TRÒN_B1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIÀY BÍT MŨI TRÒN B1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GIÀY_CAO_GÓT_MŨI_NHỌN_GB00126" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIÀY CAO GÓT MŨI NHỌN GB00126.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIÀY_MARY_JANE_B1182" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIÀY MARY JANE B1182.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIÀY_MARY_JANE_B1183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIÀY MARY JANE B1183.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mix_do_mua_dong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mix do mua dong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="momo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\momo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tintuc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tintuc2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tintuc3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tintuc3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VideoDeMo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VideoDeMo.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

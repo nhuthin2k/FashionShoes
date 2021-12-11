@@ -18,9 +18,6 @@ namespace DoAnCoThanh.Models
         public int SoLuong { get; set; }
         [DisplayName("Đơn giá ")]
         public double DonGia { get; set; }
-        [DisplayName("tổng tiền")]
-
-        public double TongTien { get => DonGia * SoLuong; }
 
         [DisplayName("Nhân viên tư vấn")]
         public string NhanVienTuVan { get; set; }

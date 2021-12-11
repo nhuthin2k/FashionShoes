@@ -1,0 +1,33 @@
+﻿@model List<DoAnCoThanh.Models.GioHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<table class=" table">
+    <thead>
+        <tr>
+            <td>mã Sp</td>
+            <td>tên sp</td>
+            <td>ảnh</td>
+            <td>số lượng</td>
+            <td>đơn giá</td>
+            <td>thành tiền</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.MaSp</td>
+            <td>@item.</td>
+            <td><img src="@item.ChiTietGioHang.HinhAnh" alt="Alternate Text"  width="100"/> </td>
+            <td><input type="text"  class= "SoLuong"  value="@item.SoLuong"/> </td>
+            <td>@item.Gia </td>
+            <td>@item.Gia * @item.SoLuong </td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
+
