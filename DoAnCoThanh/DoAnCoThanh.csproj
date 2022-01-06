@@ -127,10 +127,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
-    <Compile Include="Controllers\ChiTietHoaDonsController.cs" />
     <Compile Include="Controllers\GioHangsController.cs" />
     <Compile Include="Controllers\HangHoasController.cs" />
-    <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\imagesController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
@@ -144,15 +142,18 @@
     <Compile Include="Migrations\202111271550503_update_db.Designer.cs">
       <DependentUpon>202111271550503_update_db.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201041422461_upd_database.cs" />
+    <Compile Include="Migrations\202201041422461_upd_database.Designer.cs">
+      <DependentUpon>202201041422461_upd_database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\account.cs" />
     <Compile Include="Models\BaseModel.cs" />
-    <Compile Include="Models\ChiTietGioHang.cs" />
-    <Compile Include="Models\ChiTietHoaDon.cs" />
+    <Compile Include="Models\ChiTietDonHang.cs" />
     <Compile Include="Models\DoAnContext.cs" />
     <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\HangHoa.cs" />
-    <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\DonHang.cs" />
     <Compile Include="Models\image.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NhaCungCap.cs" />
@@ -224,6 +225,10 @@
     <None Include="Resources\GB MARY JANE B1373.jpg" />
     <None Include="Resources\GIÀY BÍT MŨI TRÒN B1280.jpg" />
     <None Include="Resources\GIÀY MARY JANE B1183.jpg" />
+    <None Include="Resources\tintuc1.png.bmp" />
+    <None Include="Resources\tintuc1.png" />
+    <None Include="Resources\tintuc4.jpg" />
+    <None Include="Resources\tintuc5.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
@@ -667,6 +672,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111271550503_update_db.resx">
       <DependentUpon>202111271550503_update_db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201041422461_upd_database.resx">
+      <DependentUpon>202201041422461_upd_database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

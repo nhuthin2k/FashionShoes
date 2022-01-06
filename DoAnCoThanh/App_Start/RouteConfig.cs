@@ -21,7 +21,8 @@ namespace DoAnCoThanh
             routes.MapRoute(
                 name: "them vao gio",
                 url: "them-vao-gio",
-                defaults: new { controller = "GioHangs", action = "AddItem", id = UrlParameter.Optional }
+                defaults: new { controller = "GioHangs", action = "AddItem", id = UrlParameter.Optional },
+                namespaces : new[] {"fashionshoes.controller"}
             );
         }
     }

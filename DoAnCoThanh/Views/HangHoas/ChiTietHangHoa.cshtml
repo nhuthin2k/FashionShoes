@@ -1,14 +1,15 @@
 ﻿@model  DoAnCoThanh.Models.HangHoa
+
 @{
     ViewBag.Title = "ChiTietHangHoa";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<head >
+<head>
     <a href="/Home/Index" style=" font-size:20px">Trang chủ</a>
-    <a href="/TinTucs/Index"style=" font-size:20px"> > Tin Tức</a>
+    <a href="/TinTucs/Index" style=" font-size:20px"> > @ViewBag.ChiTiet.TenSp</a>
 </head>
-<body  style="margin-top: 50px;">
+<body style="margin-top: 50px;">
     <div class=" row ChiTiet" style="margin-top:35px;">
         <div class=" col-md-6 AnhSP">
             <img src="~/Resources/@ViewBag.ChiTiet.HinhAnh" alt="Alternate Text" />
@@ -63,13 +64,16 @@
 
                 <p><i class="bi-alarm"></i> Bảo hành 365 ngày</p>
             </div>
-
+            @*@foreach (var item in ViewBag.ListHangHoa)
+            {
+                <a href="~/GioHangs/AddItem?MaSp=@item.MaSp" style="color: coral; border: double; border-color: coral; width: 300px">Thêm Vào Giỏ Hàng</a>
+            }*@
         </div>
 
     </div>
     <div>
         <h1 style="color: coral; border: double; border-color: coral; width: 300px">Mô Tả Sản Phẩm</h1>
-        <p> Giày : @ViewBag.ChiTiet.TenSp</p> 
+        <p> Giày : @ViewBag.ChiTiet.TenSp</p>
         <p> kiểu dáng : @ViewBag.ChiTiet.KieuDang</p>
         <p>kiểu lót : @ViewBag.ChiTiet.KieuLot</p>
         <p>Kiểu đế : @ViewBag.ChiTiet.KieuDe</p>
@@ -81,6 +85,5 @@
 </body>
 
 <footer>
-
 </footer>
 

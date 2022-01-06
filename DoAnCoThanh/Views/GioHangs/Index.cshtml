@@ -1,4 +1,4 @@
-﻿@model List<DoAnCoThanh.Models.GioHang>
+﻿@model DoAnCoThanh.Models.GioHang
 
 @{
     ViewBag.Title = "Index";
@@ -12,21 +12,31 @@
             <td>ảnh</td>
             <td>số lượng</td>
             <td>đơn giá</td>
-            <td>thành tiền</td>
+            <td>tổng tiền</td>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @if (ViewBag.listGio != null)
         {
+            foreach (var item in ViewBag.listGio)
+            {
         <tr>
-            <td>@item.MaSp</td>
-            <td>@item.</td>
-            <td><img src="@item.ChiTietGioHang.HinhAnh" alt="Alternate Text"  width="100"/> </td>
-            <td><input type="text"  class= "SoLuong"  value="@item.SoLuong"/> </td>
-            <td>@item.Gia </td>
-            <td>@item.Gia * @item.SoLuong </td>
+            <td>@item.hangHoa.MaSp</td>
+            <td>@item.hangHoa.TenSp</td>
+            <td style="width: 100px"> <img src="~/Resources/@item.hangHoa.HinhAnh" width="100" /> </td>
+            <td>
+                <form action="GioHangs/updateSoLuong" method="post">
+                    <input type="hidden" name="idProduct" value="@item.hangHoa.MaSp" />
+                    <input type="number" name="SoLuong" class="SOLUONG" style="width:50px;" value="@item.SoLuong" />
+                    <button type="submit" style="background-color:orange;border:5px;">Update</button>
+                </form>
+            </td>
+            <td>@item.hangHoa.Gia,000VND </td>
+            <td> @item.tongTien(),000 VND</td>
         </tr>
+            }
         }
+
         
     </tbody>
 </table>

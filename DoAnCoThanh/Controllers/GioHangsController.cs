@@ -10,21 +10,19 @@ using DoAnCoThanh.Models;
 
 namespace DoAnCoThanh.Controllers
 {
-    public class GioHangsController : Controller
+    public class GioHangsController : Controller//DonHangController
     {
         private  const string GioHang = "GioHang";
         private DoAnContext db = new DoAnContext();
 
         // GET: GioHangs
-        public ActionResult Index()
+        public ActionResult Index()//hiển thị danh sách sp trong giỏ hàng- session
         {
-            var Gio = Session[GioHang];
-            var list = new List<GioHang>();
-            if (Gio != null)
-            {
-                list =(List<GioHang>)Gio;
-            }
-            return View(db.GioHangs.ToList());
+            var Gio = Session["GioHang"];//lấy giỏ hàng trong session
+
+            ViewBag.listGio = Gio;//convert sang list
+           
+            return View();//đẩy list sang view
         }
 
         // GET: GioHangs/Details/5
@@ -34,12 +32,12 @@ namespace DoAnCoThanh.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GioHang gioHang = db.GioHangs.Find(id);
-            if (gioHang == null)
+            DonHang DonHang = db.DonHang.Find(id);
+            if (DonHang == null)
             {
                 return HttpNotFound();
             }
-            return View(gioHang);
+            return View(DonHang);
         }
 
         // GET: GioHangs/Create
@@ -53,16 +51,16 @@ namespace DoAnCoThanh.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSp,SoLuong")] GioHang gioHang)
+        public ActionResult Create([Bind(Include = "MaSp,SoLuong")] DonHang DonHang)
         {
             if (ModelState.IsValid)
             {
-                db.GioHangs.Add(gioHang);
+                db.DonHang.Add(DonHang);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(gioHang);
+            return View(DonHang);
         }
 
         // GET: GioHangs/Edit/5
@@ -72,12 +70,12 @@ namespace DoAnCoThanh.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GioHang gioHang = db.GioHangs.Find(id);
-            if (gioHang == null)
+            DonHang DonHang = db.DonHang.Find(id);
+            if (DonHang == null)
             {
                 return HttpNotFound();
             }
-            return View(gioHang);
+            return View(DonHang);
         }
 
         // POST: GioHangs/Edit/5
@@ -103,12 +101,12 @@ namespace DoAnCoThanh.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GioHang gioHang = db.GioHangs.Find(id);
-            if (gioHang == null)
+            DonHang DonHang = db.DonHang.Find(id);
+            if (DonHang == null)
             {
                 return HttpNotFound();
             }
-            return View(gioHang);
+            return View(DonHang);
         }
 
         // POST: GioHangs/Delete/5
@@ -116,8 +114,8 @@ namespace DoAnCoThanh.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            GioHang gioHang = db.GioHangs.Find(id);
-            db.GioHangs.Remove(gioHang);
+            DonHang DonHang = db.DonHang.Find(id);
+            db.DonHang.Remove(DonHang);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -130,45 +128,73 @@ namespace DoAnCoThanh.Controllers
             }
             base.Dispose(disposing);
         }
-        public ActionResult AddItem ( int MaSp , int SoLuong)
+        public ActionResult AddItem (int MaSp , int SoLuong=1)
         {
-            var abc = new HangHoa().ViewDetails(MaSp);
-            var Gio = Session[GioHang];
-            if (Gio != null)
+            var itemSelected = db.HangHoas.Find(MaSp);
+            var Gio = Session["GioHang"];
+            if(itemSelected != null)
             {
-                var list = (List<GioHang>)Gio;
-                if (list.Exists(x=>x.MaSp==MaSp))
+                if (Gio != null)
                 {
-                    foreach (var item in list)
+                    var list = (List<GioHang>)Gio;
+                    if (list.Exists(x=>x.hangHoa.MaSp==MaSp))
                     {
-                        if (item.MaSp == MaSp)
+                        foreach (var item in list)
                         {
-                            item.SoLuong += SoLuong;
+                            if (item.hangHoa.MaSp == MaSp)
+                            {
+                                item.SoLuong += SoLuong;
+                            }
                         }
-                    }
 
+                    }
+                    else
+                    {
+                        var item = new GioHang();
+                        item.hangHoa = itemSelected;
+                        item.SoLuong = 1;
+                        list.Add(item);
+                    }
+                    Session["GioHang"] = list;
                 }
                 else
                 {
+                    // tạo mới cái giỏ
                     var item = new GioHang();
-                    item.MaSp = MaSp;
+                        item.hangHoa = itemSelected;
                     item.SoLuong = SoLuong;
+                    var list =  new List<GioHang>();
                     list.Add(item);
-                }
-                
+                    // gán vô session
+                    Session["GioHang"] = list;
+                };
             }
-            else
+            var Gio2 = Session["GioHang"];
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public  ActionResult updateSoLuong(int idProduct,int SoLuong)
+        {
+            var itemSelected = db.HangHoas.Find(idProduct);
+            var Gio = Session["GioHang"];
+            if (itemSelected != null)
             {
-                // tạo mới cái giỏ
-                var item = new GioHang();
-                    item.MaSp = MaSp;
-                item.SoLuong = SoLuong;
-                var list =  new List<GioHang>();
-                // gán vô session
-                Session[GioHang] = list;
-            };
-                
-        return RedirectToAction("Index");
+                if (Gio != null)
+                {
+                    var list = (List<GioHang>)Gio;
+                    if (list.Exists(x => x.hangHoa.MaSp == idProduct))
+                    {
+                        foreach (var item in list)
+                        {
+                            if (item.hangHoa.MaSp == idProduct)
+                            {
+                                item.SoLuong = SoLuong;
+                            }
+                        }
+                    }
+                }
+            }
+            return RedirectToAction("Index");
         }
     }
 }

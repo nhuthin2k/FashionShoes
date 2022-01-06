@@ -18,6 +18,6 @@ namespace DoAnCoThanh.Models
         public string DiaChi { get; set; }
         [DisplayName("Tổng tiêu dùng")]
         public int TongTieuDung { get; set; }
-        public virtual GioHang GioHang { get; set; }
+        public virtual ICollection<DonHang> DonHang { get; set; }
     }
 }

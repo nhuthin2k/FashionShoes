@@ -7,15 +7,13 @@ using System.Web;
 
 namespace DoAnCoThanh.Models
 {
-  
-    [Serializable]
     public class GioHang
     {
-        [Key]
-        public int MaSp { get; set; }
-        public int MaGiohang { get; set; }
+        public HangHoa hangHoa { get; set; }
         public int SoLuong { get; set; }
-        public int Gia { get; set; }
-        public virtual ChiTietGioHang ChiTietGioHang { get; set; }
+        public float tongTien()
+        {
+            return (this.hangHoa.Gia * this.SoLuong);
+        }
     }
 }

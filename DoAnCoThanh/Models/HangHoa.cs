@@ -38,10 +38,6 @@ namespace DoAnCoThanh.Models
 
         public ICollection<image> images { get; set; }
 
-        internal object ViewDetails(int maSp)
-        {
-            throw new NotImplementedException();
-        }
         /* public void  KhuyenMai(){
     if (GiaCu>Gia)
     {
